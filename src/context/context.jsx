@@ -3,7 +3,6 @@ import { createContext, useContext, useState } from "react";
 export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
-  const [selectedLevel, setSelectedLevel] = useState();
   const [levels, setLevels] = useState([
     {
       id: Date.now(),
@@ -46,9 +45,7 @@ export const AppContextProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider
-      value={{ levels, addLevel, selectedLevel, setSelectedLevel }}
-    >
+    <AppContext.Provider value={{ levels, addLevel }}>
       {children}
     </AppContext.Provider>
   );
