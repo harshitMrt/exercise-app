@@ -88,7 +88,7 @@ export default function Progress({ index = 0 }) {
 
   return (
     <div>
-      <h2>Progress</h2>
+      <h2>Progress Bar</h2>
 
       <div
         style={{
