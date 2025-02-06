@@ -113,7 +113,7 @@ export default function Progress({ index = 0 }) {
             textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)",
           }}
         >
-          Every Cycle is played after a delay of
+          Every Cycle is played after a delay of (sec)
         </label>
         <input
           placeholder="Default value set to 1 sec"
